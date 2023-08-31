@@ -1,12 +1,6 @@
 """1)Crear un programa que reciba el número de años que tiene nuestra computadora y muestre en la consola que el 
 computador es nuevo si es menor o igual a 2 años y que el computador es viejo si es mayor a 2 años."""
 
-edad=int(input("cuántos años tiene su computadora?: "))
-if edad<=2:
-    print("su computadora es nueva")
-elif edad>2:
-    print("su computadora es vieja")
-pass
 
 """2)Hacer que el programa anterior muestre un mensaje de error si el usuario digita un número negativo."""
 
@@ -68,19 +62,6 @@ else:
 """6-Hacer un programa que permita saber si un año es bisiesto. Para que un año sea bisiesto debe ser divisible por 4 y 
 no debe ser divisible por 100 excepto que también sea divisible por 400""" 
 
-anio = int(input("Ingrese un año: "))
-print("___________________")
-
-if anio % 4 == 0:
-    if anio % 100 != 0 or anio % 400 == 0:
-        print("EL AÑO INGRESADO ES BISIESTO")
-        print("..............................")
-    else:
-        print("EL AÑO INGRESADO NO ES BISIESTO")
-        print("..............................")
-else:
-    print("EL AÑO INGRESADO NO ES BISIESTO")
-    print("..............................")
 
 """7-Escribí un programa para solicitar al usuario tres números y mostrar en pantalla al menor de los tres."""
 
@@ -129,31 +110,6 @@ El grupo A esta formado por las mujeres con un nombre anterior a la M y los homb
 posterior a la N y el grupo B por el resto. Escribir un programa que pregunte al usuario su nombre y sexo, 
 y muestre por pantalla el grupo que le corresponde."""
 
-print("-----------------------------------------------------------")
-
-print("________________ DIVISION POR GRUPOS A Y B ________________")
-print("_Ingrese su nombre y sexo para saber a que grupo pertenece_")
-#Se pide al usuario que ingrese su nombre y sexo
-nombre=input("_Ingrese su Nombre: ").upper()
-sexo=input("_Ingrese su sexo(M/F): ").upper()
-#Se determina a que grupo pertenece
-if sexo == 'M':
-    if nombre[0] < 'N':
-        grupo = 'B'
-    else:
-        grupo = 'A'
-elif sexo == 'F':
-    if nombre[0] < 'M':
-        grupo = 'A'
-    else:
-        grupo = 'B'
-else:
-    grupo = 'No válido'
-
-if grupo != 'No válido':
-    print("Usted pertenece al grupo: ", grupo)
-else:
-    print("Sexo no válido. Por favor, ingrese 'M' o 'F'.")
 
 print("-----------------------------------------------------------")
 
