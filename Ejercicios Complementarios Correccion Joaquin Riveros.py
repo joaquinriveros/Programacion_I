@@ -1,4 +1,4 @@
-#Ejercicios Complementarios Joaquin Riveros
+#Ejercicios en Clase - Ejercicios Complementarios - Joaquin Riveros
 #1. Crea una variable llamada "numero1" y asígnale un número entero de tu elección.
 numero1=15
 #2. Crea una variable llamada "numero2" asignándole un número decimal de tu elección.
